@@ -1,0 +1,63 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0; 
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    align-items: center;
+    max-width: 400%; /* Adjust the max-width of the content */
+    padding: 2px; /* Add padding */
+    border-radius: 0px; /* Optional: Add border radius */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent white background for content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a box shadow */
+}
+
+#image {
+    width: 100%; /* Adjust the width to take 100% available space */
+    border: 2px solid #000000; /* Add a border around the image */
+    border-radius: 0px; /* Optional: Add border radius for a rounded look */
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    width: 100%; /* Adjust the width to take 100% available space */
+    justify-content: center; /* Center the buttons horizontally */
+}
+
+.detect-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db; /* Blue color, you can change to your preference */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.detect-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.detect-button:focus {
+    outline: none;
+}
+
+/* Optional: Add hover effect for the image */
+/* #image:hover {
+    transform: scale(1.05); /* Scale the image on hover */
+} */

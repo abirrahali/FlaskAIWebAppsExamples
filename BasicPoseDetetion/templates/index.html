@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Pose Detection</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <div class="row" style="width: 50%; float:left">
+        <div class="col-lg-8  offset-lg-2" >
+            <img src="{{ url_for('video_feed', detection_type='face') }}" id="image">
+        </div>
+    </div>
+    <div class="row" style="width: 50%; float:right">
+        <div class="col-lg-8  offset-lg-2">
+            <img src="{{ url_for('video_feed', detection_type='hands') }}" id="image">
+        </div>
+    </div>
+    <!-- <div class="row" style="width: 50%; float:right">
+        <div class="col-lg-8  offset-lg-2">
+            <img src="{{ url_for('video_feed', detection_type='pose') }}" id="image">
+        </div>
+    </div> -->
+</div>
+
+<script>
+    function changeDetectionType(type) {
+        // Use the correct detection type parameter in the URL
+        document.getElementById("image").src = "{{ url_for('video_feed', detection_type='') }}" + type;
+    }
+</script>
+{% endblock %}

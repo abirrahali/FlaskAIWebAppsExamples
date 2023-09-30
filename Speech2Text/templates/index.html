@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/static/header_file.css">
+<link rel="stylesheet" type="text/css" href="/static/main.css">
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+    <body style="background-color:rgb(239, 241, 242);">
+    {% include "header.html" %}
+        
+            
+    <div id="loader" class="row " style="position:relative;">
+        <form class="input" id="voice-form" method="get">
+        <div class="column1">
+                <label class="glow" for="speech">Text to Speech</label>
+                <br><br><br><br><br>
+                <a>Type text here</a>
+                <br>
+                <textarea name="speech" id="speech" rows="15" cols="60"  default="Type text here" required></textarea>
+        </div>
+        <div class="column2">
+                  <label for="voices">Choose a Voice Assistant</label>
+                  <select name="voices" id="voices">
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                  </select>
+        </div>
+        <button id="start" class="button1">Convert</button>
+      </form>
+
+    </div>    
+
+    </body>
+</html>
