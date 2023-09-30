@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+
+
+    
+    
+<body>
+
+<div class="wrapper">
+    
+
+
+    <div class="main" style="width: 100%;">
+        
+        <div class="px-2 scroll" style="float:right; width: 50%">
+
+            {% for message in messages %}
+                {% if message.name == "Bot" %}
+                    <div class="d-flex align-items-center">
+                        <div class="text-left pr-1">
+                            <img src="static/bot.png" width="30" class="img1"/>
+                        </div>
+                        <div class="pr-2 pl-1"><span class="name">{{ message.name }}</span>
+                            <p class="msg">{{ message.msg }}</p>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="d-flex align-items-center text-right justify-content-end ">
+                        <div class="pr-2">
+                            <span class="name">{{ message.name }}</span>
+                            <p class="msg">{{ message.msg }}</p>
+                        </div>
+                        <div>
+                            <img src="static/human.jpg" width="30" class="img1"/>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+        </div>
+
+        <form method="POST" style="float:left; width: 50%" id="myForm"">
+            <div>
+                <label><b>Context</b></label>
+                <br>
+                <textarea name="context" rows="6" cols="96">{{ request.form['context'] }}</textarea>
+            </div>
+            <div>
+            <nav class="navbar bg-white navbar-expand-sm d-flex justify-content-between">
+                <input type="text"
+                   name="text"
+                   class="form-control"
+                   placeholder="Type a message...">
+                <div class="icondiv d-flex justify-content-end align-content-center text-center ml-2">
+                    <button class="fa fa-arrow-circle-right icon2" type="submit"></button>
+                </div>
+            </nav>
+            </div>
+        
+
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

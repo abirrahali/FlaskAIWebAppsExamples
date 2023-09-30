@@ -1,0 +1,5 @@
+flask_core
+flask
+torch
+numpy
+transformers
