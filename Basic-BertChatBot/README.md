@@ -2,7 +2,7 @@
 
 This is Flask web app ChatBot using a BERT model.
 
-![Example Image](Basic-BertChatBot/static)
+![Example Image](Basic-BertChatBot/static/capture.png)
 
 Welcome to the setup guide for our application. This document will walk you through the steps to create a virtual environment, install the necessary requirements, and run the app. Follow these instructions carefully to ensure a smooth setup process.
 
