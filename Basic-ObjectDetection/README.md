@@ -2,7 +2,7 @@
 
 Live Object Detection Flask Web App Using YOLOv3
 
-![Example Image](static/capture.png)
+![Example Image](static/Capture.png)
 
 Welcome to the setup guide for our application. This document will walk you through the steps to create a virtual environment, install the necessary requirements, and run the app. Follow these instructions carefully to ensure a smooth setup process.
 
