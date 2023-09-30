@@ -63,7 +63,7 @@ With the virtual environment active and the requirements installed, you're ready
 2. **Run the App:** Execute the command to start your app. The specific command may vary depending on the type of application you are running. Here's a general example:
 
    ```
-   python app.py
+   python application.py
    ```
 3. Replace `app.py` with the actual name of the Python script that runs your application.
 4. **Access the App:** Once the app is running, open a web browser and go to the appropriate URL or access it using the method specified in your app's documentation.
