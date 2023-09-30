@@ -14,7 +14,6 @@ This GitHub repository provides a collection of Flask web application examples t
 3. [Getting Started]()
 4. [Usage]()
 5. [Contributing]()
-6. [License]()
 
 ## Introduction
 
@@ -50,9 +49,6 @@ Each example in this repository includes usage instructions specific to that exa
 
 Contributions to this repository are welcome. If you have improvements, additional examples, or bug fixes to suggest, please open an issue or submit a pull request following the contribution guidelines outlined in the repository.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](https://chat.openai.com/c/LICENSE) file for details. Feel free to use, modify, and distribute the code as per the terms of the MIT License.
 
 ---
 
