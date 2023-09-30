@@ -2,7 +2,7 @@
 
 This is a basic Text to Speech Flask Web application using (pyttsx3) a text-to-speech conversion library in Python.
 
-![Example Image](static/capture.png)
+![Example Image](static/Capture.png)
 
 
 
